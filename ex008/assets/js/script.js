@@ -8,7 +8,7 @@ function message(){
     const hr = hora();
     const msg = document.getElementById('msg');
 
-    return msg.innerHTML = `Agora são ${hr} hora`;
+    return msg.innerHTML = `Agora são ${hr} horas`;
 }
 
 function image(){
