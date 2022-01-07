@@ -1,8 +1,11 @@
 @charset "utf-8";
 
+html{
+    font-size: 62.5%;
+}
 body{
     background-color: rgb(6, 106, 206);
-    
+    font-size: 1.8rem;
 }
 
 header{
@@ -14,30 +17,48 @@ header{
 
 section{
     background-color: white;
-    max-width: 500px;
+    max-width: 50rem;
     margin: 0 auto;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow:  4px 5px 8px rgba(0, 0, 0, 0.63);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow:  0.4rem 0.5rem 0.8rem rgba(0, 0, 0, 0.63);
 }
 
 div{
-    padding: 15px;
+    padding: 1.5rem;
     text-align: center;
 }
 
 footer{
     text-align: center;
-    padding: 15px;
+    padding: 1.5rem;
 }
 
 footer a{
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     font-style: italic;
     font-weight: bold;
-    
+    position: relative;
+    font-weight: bold;
 }
 
+footer a::before{
+    content: "";
+    width: 0;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    height: 0.2rem;
+    transition: all ease-in-out 300ms;
+}
 
+footer a:hover::before{
+    width: 100%;
+    left: 2%;
+}
 
+#image:hover{
+    transform: scale(1.1);
+}

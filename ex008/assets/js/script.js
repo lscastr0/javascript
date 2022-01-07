@@ -8,7 +8,7 @@ function message(){
     const hr = hora();
     const msg = document.getElementById('msg');
 
-    return msg.innerHTML = `Agora são ${hr} horas`;
+    msg.innerHTML = `Agora são ${hr} horas`;
 }
 
 function image(){
@@ -27,9 +27,26 @@ function image(){
 
 }
 
+function backgorundColor(){
+    const backG = document.querySelector('body');
+    const hr = hora();
+
+    if(hr > 0 && hr < 13){
+        backG.style.backgroundColor = '#ccb991';
+    }
+    else if(hr < 18){
+        backG.style.backgroundColor = '#b9846f';
+    }
+    else{
+        backG.style.backgroundColor = '#515154' 
+    }
+
+}
+
 function run(){
     message();
     image();
+    backgorundColor()
 }
 
 const body = document.querySelector('body');
