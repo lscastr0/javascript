@@ -7,52 +7,52 @@ function validator() {
     if (birthValue > todayDate || birthValue <= 0) {
         alert('Data inválida');
     }
-    else{
+    else {
         const age = todayDate - birthValue;
         const check = document.getElementsByName('sex');
         let gender = '';
         const image = document.createElement('img');
         image.setAttribute('id', 'image');
-        if(check[0].checked){
+        if (check[0].checked) {
             gender = 'Homem';
 
-            if(age > 0 && age <= 12){
+            if (age > 0 && age <= 12) {
                 image.setAttribute('src', 'assets/img/kidm.png');
             }
 
-            else if(age <= 19){
+            else if (age <= 19) {
                 image.setAttribute('src', 'assets/img/teenm.png');
             }
 
-            else if(age <= 50){
+            else if (age <= 50) {
                 image.setAttribute('src', 'assets/img/adultm.png');
             }
-            else{
+            else {
                 image.setAttribute('src', 'assets/img/elderlym.png');
             }
         }
-        else{
+        else {
             gender = "Mulher";
 
-            if(age > 0 && age <= 12){
+            if (age > 0 && age <= 12) {
                 image.setAttribute('src', 'assets/img/kidw.png');
             }
 
-            else if(age <= 19){
+            else if (age <= 19) {
                 image.setAttribute('src', 'assets/img/teenw.png');
             }
 
-            else if(age <= 50){
+            else if (age <= 50) {
                 image.setAttribute('src', 'assets/img/adultw.png');
             }
-            else{
+            else {
                 image.setAttribute('src', 'assets/img/elderlyw.png');
             }
         }
-        
-        message.style.textAlign ='center';
+
+        message.style.textAlign = 'center';
         message.innerText = `Detectamos ${gender} de ${age} anos`;
         message.appendChild(image);
     }
-    
+
 }
