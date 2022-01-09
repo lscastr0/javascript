@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <main>
+        <div>
+            <p>
+                <label for="birthy">Ano de nascimento</label>
+                <input type="text" name="birth" id="birthy">
+            </p>
+
+            <p>
+                <label for="mal">Masculino</label>
+                <input type="radio" name="sex" id="mal" checked>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sex" id="fem">
+            <p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="validator()">
+            </p>
+
+            <div id="msg">
+                Preencha os dados para ver o resultado
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">&copy;CursoemVideo</a>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
