@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relogio</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
-        <div id="msg">
-            Aqui vai aparecer uma mensagem
+        <div id="inputs">
+            <label for="numero">Número</label>
+            <input type="text" name="numero" id="numero">
+            <input type="button" value="Gerar tabuada" onclick="calcular()">
         </div>
 
-        <div id="foto"> 
-            <img id="image" src="assets/img/afternoon.png" alt="">
+        <div id="msg">
+            <select name="" id="selection" size="10">
+                <option value="" class="opt">Digite um número acima</option>
+                
+            </select>
         </div>
     </section>
 
