@@ -1,8 +1,8 @@
 function parimpar(n) {
-    if (n % 2 === 0){
+    if (n % 2 === 0) {
         return 'par'
-    }
-    else{
+        
+    } else {
         return 'impar'
     }
 }

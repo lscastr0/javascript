@@ -6,4 +6,13 @@ function fatorial(n) {
     return fat;
 }
 
+function recursiva(n) {
+    if (n === 1) {
+        return 1
+    } else {
+        return n * recursiva(n - 1);
+    }
+}
+
 console.log(fatorial(5));
+console.log(recursiva(5));
