@@ -85,5 +85,5 @@ label{
 
 .btn button:hover{
     background-color: var(--primary-color);
-    color: white;
+    color: white
 }
