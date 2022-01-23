@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+:root{
+    --primary-color: rgb(13, 106, 134);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+h1{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+p{
+    padding: 1rem;
+}
+
+main{
+    padding: 5rem;
+}
+.main{
+    background-color: white;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow:  0.4rem 0.5rem 0.8rem rgba(0, 0, 0, 0.63);
+}
+
+.p{
+    background-color: var(--primary-color);
+    margin: 1rem;
+}
+
