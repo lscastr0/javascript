@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
-    <style>
-        body{
-            background-color: cornflowerblue;
-            color: cornsilk;
-            font: 25px sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <h1>Iniciando os estudos DOM</h1>
@@ -18,16 +12,6 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
     <div id="msg">clique me mim</div>
 
-    <script>
-        var p1 = document.getElementsByTagName('p')[0];
-        p1.style.color = "blue";
-        /*
-        var d = document.getElementById('msg');
-        d.innerText = "Olá";
-        document.querySelector('div').innerText = 'não';
-        */
-       var d = document.querySelector('div#msg');
-       d.innerText = "olá";
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
