@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+:root{
+    --primary-color: rgb(13, 106, 134);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+header{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.main{
+    background-color: white;
+    max-width: 50rem;
+    margin: 10rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow:  0.4rem 0.5rem 0.8rem rgba(0, 0, 0, 0.63);
+}
+
+h2{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#timer{
+    font-size: 6rem;
+    padding: 3rem 0;
+}
+
+button{
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.pausado{
+    color: red;
+}
