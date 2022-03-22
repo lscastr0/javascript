@@ -1,4 +1,4 @@
-//desestruturação com objetos
+//desestruturação com arrays
 
 function funcao([valor1, valor2, valor3]) {
 
